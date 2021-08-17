@@ -5,3 +5,26 @@
     box-sizing: border-box;
 }
 /* /general rules */
+
+/* main section of the page */
+main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+}
+/* grid container */
+.container{
+    margin: auto;
+    display: grid;
+    background-color: grey;
+    border:1px solid black;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+/* grid container */
+.cell{
+    background-color: orange;
+}
+/* /main section of the page */
