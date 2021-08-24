@@ -68,19 +68,35 @@ main{
     grid-template-rows: 500px 500px; 
     in this situation it's not used, since the rows are defined implicitely
     by the number of columns that are present in the container */
+    
+    /* align and justify of grid-cells inside the grid-container */
+    justify-content: center;
+    align-content: center;
+    /* align and justify of grid-cells inside the grid-container */
+
+    /* align and justify of items inside the grid-items */
+    align-items: center;
+    justify-items: center;
+    /* /align and justify of items inside the grid-items */
 }
 /* grid container */
 .cell{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     background-color: rgba(230, 229, 228, 0.1);
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     color: white;
 }
 .cell:nth-of-type(1){
-    grid-column: 2 / span 2;
+    /* grid-column: 2 / 4; */
+    /* grid-column: 2 / span 2; */
+    grid-column: 2 / -1;
     grid-row: 1 / 2;
+    
+}
+.cell:nth-of-type(5){
+    grid-row: 4 / 5;
     
 }
 .cell:nth-of-type(6){
